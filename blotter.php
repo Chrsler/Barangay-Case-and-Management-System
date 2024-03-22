@@ -105,12 +105,13 @@ include ("./connection/connection_db.php");
             <!-- TABLE -->
             <main class="table" id="customers_table">
                 <section class="table__header">
-                    <h1>Case List</h1>
+                    <!-- <h1>Case List</h1> -->
 
                     <!-- SEARCH -->
                     <div class="input-group">
                         <input type="search" placeholder="Search Data...">
-                        <img src="images/search.png" alt="">
+                        <!-- <img src="images/search.png" alt=""> -->
+                        <span><i class='bx bx-search-alt' ></i></span>
                     </div>
 
                     <!-- EXPORTING TO PDF -->
@@ -125,12 +126,17 @@ include ("./connection/connection_db.php");
                             <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
                         </div>
                     </div> -->
+
+                    <!-- ADD POPUP FORM -->
+                <button class="add-btn" data-modal="modalOne" id="addCaseButton">New Case
+                    <span><i class='bx bxs-file-plus' ></i></span>
+                </button>
                 </section>
 
                 <div id="overlay"></div>
 
-                <!-- ADD POPUP FORM -->
-                <button class="button" data-modal="modalOne" id="addCaseButton">New Case</button>
+                
+                <!--Add form-->
                 <div class="add-form">
                     <div class="form-head">
 
@@ -310,9 +316,13 @@ include ("./connection/connection_db.php");
                                         <td> <?php echo $row['date']; ?> </td>
                                         <td> <?php echo $row['status']; ?> </td>
                                         <td>
-                                            <a
-                                                href="./connection/delete_DB.php?blotter_id=<?php echo $row['blotter_id']; ?>">Delete</a>
-                                            <a data-modal="modalOne" id="editCaseButton">Edit</a>
+                                            <button class="action-btns del-btn" 
+                                                href="./connection/delete_DB.php?blotter_id=<?php echo $row['blotter_id']; ?>">Delete
+                                               <span><i class='bx bx-trash' ></i></span>
+                                            </button>
+                                            <button class="action-btns edit-btn" data-modal="modalOne" id="editCaseButton">Edit
+                                            <span><i class='bx bx-edit-alt'></i></span>
+                                            </button>
 
                                             <!-- EDIT POPUP FORM -->
                                             <div class="edit-form">
@@ -473,7 +483,9 @@ include ("./connection/connection_db.php");
                                                 </div>
                                             </div>
 
-                                            <a data-modal="modalOne" id="editCaseButton">View</a>
+                                            <button class="action-btns view-btn" data-modal="modalOne" id="editCaseButton">View 
+                                                <span><i class='bx bx-book-open' ></i></span>
+                                            </button>
 
                                         </td>
                                     </tr>
