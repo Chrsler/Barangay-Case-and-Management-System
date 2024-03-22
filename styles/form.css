@@ -1,0 +1,18 @@
+.red-line {
+    position: absolute;
+    top: 51px;
+    width: 95%;
+    height: 30px;
+    margin: 0 -30px 0 -26px;
+    background-color: rgb(120, 0, 0);
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 100px;
+}

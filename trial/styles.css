@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.blotter {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 20px;
+}
