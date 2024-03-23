@@ -24,7 +24,19 @@ include("./connection/connection_db.php");
     <body>
 
         <!-- LOG IN -->
-        <section>
+        
+        <div class="leftpart">
+
+            <img src="./assets/left-logo.png" alt="" id="leftimg">
+             
+             <h1>Barangay Upper Records and Complaints Management System</h1>
+
+        </div>
+
+            <div class="rightpart">
+
+            <img src="./assets/left-logo.png" alt="" id="rightimg">
+            
             <div class="form-box">
                 <div class="form-value">
                     <form method="POST" action="./connection/login_DB.php">
@@ -43,7 +55,8 @@ include("./connection/connection_db.php");
                     </form>
                 </div>
             </div>
-        </section>
+</div>
+        
 
         <!-- NOTIFICATION -->
         <script>

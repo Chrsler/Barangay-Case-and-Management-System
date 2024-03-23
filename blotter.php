@@ -316,13 +316,14 @@ include ("./connection/connection_db.php");
                                         <td> <?php echo $row['date']; ?> </td>
                                         <td> <?php echo $row['status']; ?> </td>
                                         <td>
-                                            <button class="action-btns del-btn" 
+                                            <a class="action-btns del-btn" 
                                                 href="./connection/delete_DB.php?blotter_id=<?php echo $row['blotter_id']; ?>">Delete
                                                <span><i class='bx bx-trash' ></i></span>
-                                            </button>
-                                            <button class="action-btns edit-btn" data-modal="modalOne" id="editCaseButton">Edit
+                                            </a>
+                                            <br>
+                                            <a class="action-btns edit-btn" data-modal="modalOne" id="editCaseButton">Edit
                                             <span><i class='bx bx-edit-alt'></i></span>
-                                            </button>
+                                            </a>
 
                                             <!-- EDIT POPUP FORM -->
                                             <div class="edit-form">
